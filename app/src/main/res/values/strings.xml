@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SHPDemo</string>
+    <string name="other_dialog_default_title">提示</string>
+    <string name="other_dialog_default_btn">确定</string>
 </resources>

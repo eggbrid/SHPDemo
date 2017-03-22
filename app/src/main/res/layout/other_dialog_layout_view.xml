@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <LinearLayout
+        android:id="@+id/parentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/title_template"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dip"
+                android:layout_marginStart="16dip">
+
+                <ImageView
+                    android:id="@+id/iv_title_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dip"
+                    android:scaleType="centerInside"
+                    android:src="@null"/>
+
+                <TextView
+                    android:id="@+id/tv_title_text"
+                    style="@style/DialogWindowTitle"
+                    android:textColor="#9c999d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="8dip"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/title_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider_color"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:gravity="center"
+                android:textIsSelectable="true"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/dialog_btn"
+                android:layout_margin="8dp"
+                android:text="OK"
+                android:background="@null"
+                android:textColor="@color/divider_color"
+                android:visibility="gone"
+                android:layout_width="match_parent" />
+
+            <View
+                android:id="@+id/btn_divider"
+                android:layout_width="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider_color"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/dialog_btn"
+                android:layout_margin="8dp"
+                android:text="Cancle"
+                android:background="@null"
+                android:textColor="@color/divider_color"
+                android:visibility="gone"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

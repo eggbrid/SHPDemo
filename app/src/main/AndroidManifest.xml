@@ -16,8 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.list.demo.RecyclerListViewActivity"
+        <activity
+            android:name=".view.list.demo.RecyclerListViewActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activitys.BookListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activitys.BookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activitys.AllBookActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
